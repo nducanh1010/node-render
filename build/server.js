@@ -6,6 +6,9 @@ var _web = _interopRequireDefault(require("./routes/web"));
 var _logger = _interopRequireDefault(require("../logger"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 require("dotenv").config();
+_logger["default"].log("info", "hello", {
+  f: "b"
+});
 var app = (0, _express["default"])();
 
 //config view Engine

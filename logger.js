@@ -6,7 +6,7 @@ const filename = path.join(__dirname, "created-logfile.log");
 
 const logger = winston.createLogger({
   //using console
-  transports: [new winston.transports.Console()],
+  // transports: [new winston.transports.Console()],
 
   //create file logs
   transports: [

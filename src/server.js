@@ -3,6 +3,7 @@ import express from "express";
 import configViewEngine from "./config/viewEngine";
 import initWebRoutes from "./routes/web";
 import logger from "../logger";
+logger.log("info", "hello", { f: "b" });
 let app = express();
 
 //config view Engine
