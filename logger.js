@@ -6,7 +6,9 @@ const filename = path.join(__dirname, "created-logfile.log");
 
 const logger = winston.createLogger({
   //using console
-  // transports: [new winston.transports.Console()],
+  // transports: [
+  //     new winston.transports.Console(),
+  // ],
 
   //create file logs
   transports: [
@@ -25,11 +27,11 @@ const logger = winston.createLogger({
     // `${level}: ${message} ${[Object with everything else]}`
     //
     format.simple()
-    //     //
-    //     // Alternatively you could use this custom printf format if you
-    //     // want to control where the timestamp comes in your final message.
-    //     // Try replacing `format.simple()` above with this:
-    //     //
+    //
+    // Alternatively you could use this custom printf format if you
+    // want to control where the timestamp comes in your final message.
+    // Try replacing `format.simple()` above with this:
+    //
     // format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
   ),
 });
